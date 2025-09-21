@@ -12,7 +12,7 @@ export const fetchMovies = async (query: string): Promise<Movie[]> => {
   const config = {
     params: { query },
     headers: {
-      Authorization: `Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiI1M2I1NDdlNTYzZjFhYzFiOWYxY2JlMDJjYTg3MTAwNyIsIm5iZiI6MTc1ODQ0ODU0Ny42MDE5OTk4LCJzdWIiOiI2OGNmY2JhMzhkM2Q0Yjg4NjFjYzMzNTkiLCJzY29wZXMiOlsiYXBpX3JlYWQiXSwidmVyc2lvbiI6MX0.fkX3jn4hJFwtv5f_wfTYiWO14gB_o340i2C4yZHWjK8`,
+      Authorization: `Bearer ${API_TOKEN}`,
     },
   };
 
